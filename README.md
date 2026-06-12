@@ -1,3 +1,8 @@
+<!-- 🌓 PocketPyCharm UI Engine (Dark Mode + Custom Theme Colors + Layout Fix) --> 
+<div style="text-align: right; margin: 15px 0;"> 
+  <button id="theme-toggle-btn" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease;">🌙 Dark Mode</button> 
+</div> 
+
 <style> 
   /* 🚫 Hide duplicate headers/footers */ 
   header, .site-header, #header, footer, .site-footer, .footer, #footer { display: none !important; } 
@@ -17,11 +22,11 @@
   body.dark-mode-active code { background-color: rgba(110, 118, 129, 0.4) !important; color: #e6edf3 !important; } 
   body.dark-mode-active #theme-toggle-btn { background: #21262d !important; color: #f0f6fc !important; border-color: #30363d !important; } 
 
-  /* ========================================== */
-  /* 🔥 FORCED AGGRESSIVE BUTTON OVERRIDES     */
-  /* ========================================== */
+  /* ========================================== */ 
+  /* 🔥 FORCED AGGRESSIVE BUTTON OVERRIDES      */ 
+  /* ========================================== */ 
 
-  /* 1. Force the layout container to stack cleanly */
+  /* 1. Force the layout container to stack cleanly */ 
   div.btn-container { 
     margin: 20px 0 !important; 
     display: flex !important; 
@@ -34,7 +39,7 @@
   div.btn-container a { 
     display: block !important; 
     padding: 14px 20px !important; 
-    background-color: #24292e !important; /* GitHub Charcoal Gray */
+    background-color: #24292e !important; /* GitHub Charcoal Gray */ 
     color: #ffffff !important; 
     text-decoration: none !important; 
     font-weight: bold !important; 
@@ -42,31 +47,31 @@
     border: 1px solid #444c56 !important; 
     text-align: center !important; 
     transition: all 0.2s ease-in-out !important; 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12) !important; 
   } 
 
-  /* 3. Hover state response animation */
+  /* 3. Hover state response animation */ 
   div.btn-container a:hover { 
     background-color: #2c3137 !important; 
     transform: translateY(-2px) !important; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important; 
   } 
 
-  /* 4. Force unique styling specifically for the Website variant container */
+  /* 4. Force unique styling specifically for the Website variant container */ 
   div.site-container a { 
-    background-color: #1f6feb !important; /* Vibrant Accent Blue */
+    background-color: #1f6feb !important; /* Vibrant Accent Blue */ 
     border-color: #388bfd !important; 
   } 
   div.site-container a:hover { 
     background-color: #388bfd !important; 
   } 
 
-  /* 5. Protect button text legibility inside Dark Mode updates */
+  /* 5. Protect button text legibility inside Dark Mode updates */ 
   body.dark-mode-active div.btn-container a { 
     color: #ffffff !important; 
   } 
-</style>
+</style> 
 
 <script> 
   const themeButton = document.getElementById('theme-toggle-btn'); 
@@ -91,14 +96,13 @@
 # 🚀 PocketSuite Hub
 
 ### USE THE LINKS BELOW TO SEE THE GITHUB REPOS
-<div class="btn-container">
-  <a href="https://github.com/m97493578-ops/PocketPyCharm" class="custom-btn">🚀 Open PocketPyCharm</a>
-  <a href="https://github.com/m97493578-ops/PocketPython" class="custom-btn">🚀 Open PocketPython</a>
-</div>
+<div class="btn-container"> 
+  <a href="https://github.com/m97493578-ops/PocketPyCharm">🚀 Open PocketPyCharm</a> 
+  <a href="https://github.com/m97493578-ops/PocketPython">🚀 Open PocketPython</a> 
+</div> 
 
 ### CLICK THE LINKS BELOW FOR THE WEBSITE VERSION
-<div class="btn-container site-container">
-  <a href="https://m97493578-ops.github.io/PocketPyCharm/" class="custom-btn">🚀 Open PocketPyCharm</a>
-  <a href="https://m97493578-ops.github.io/PocketPython/" class="custom-btn">🚀 Open PocketPython</a>
+<div class="btn-container site-container"> 
+  <a href="https://m97493578-ops.github.io/PocketPyCharm/">🚀 Open PocketPyCharm</a> 
+  <a href="https://m97493578-ops.github.io/PocketPython/">🚀 Open PocketPython</a> 
 </div>
-
