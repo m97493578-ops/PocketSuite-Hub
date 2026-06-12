@@ -76,9 +76,11 @@ themeButton.addEventListener('click', () => {
 
 **USE THE LINKS BELOW TO SEE THE GITHUB REPOS**
 
-* **[PocketPyCharm](https://github.com/m97493578-ops/PocketPyCharm)**
-* **[PocketPython](https://github.com/m97493578-ops/PocketPython)**
+<a href="https://github.com/m97493578-ops/PocketPyCharm" class="btn">🚀 Open PocketPyCharm</a>
+
+<a href="https://github.com/m97493578-ops/PocketPython" class="btn">🚀 Open PocketPython</a>
 
 **CLICK THE LINKS BELOW FOR THE WEBSITE VERISON**
-* **[PocketPyCharm](https://m97493578-ops.github.io/PocketPyCharm/)**
-* **[PocketPython](https://m97493578-ops.github.io/PocketPython/)**
+<a href="https://m97493578-ops.github.io/PocketPyCharm/" class="btn">🚀 Open PocketPyCharm</a>
+
+<a href="https://m97493578-ops.github.io/PocketPython/" class="btn">🚀 Open PocketPython</a>
