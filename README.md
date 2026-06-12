@@ -1,10 +1,5 @@
-<!-- 🌓 PocketPyCharm UI Engine (Dark Mode + Custom Theme Colors + Layout Fix) --> 
-<div style="text-align: right; margin: 15px 0;"> 
-  <button id="theme-toggle-btn" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease;">🌙 Dark Mode</button> 
-</div> 
-
 <style> 
-  /* 🚫 Hide duplicate headers/footers */ 
+  /* 🚫 Force theme engine elements to stay hidden */ 
   header, .site-header, #header, footer, .site-footer, .footer, #footer { display: none !important; } 
 
   /* 🟧 Light Mode Alert Box Coloring */ 
@@ -39,7 +34,7 @@
   div.btn-container a { 
     display: block !important; 
     padding: 14px 20px !important; 
-    background-color: #24292e !important; /* GitHub Charcoal Gray */ 
+    background-color: #24292e !important; 
     color: #ffffff !important; 
     text-decoration: none !important; 
     font-weight: bold !important; 
@@ -60,7 +55,7 @@
 
   /* 4. Force unique styling specifically for the Website variant container */ 
   div.site-container a { 
-    background-color: #1f6feb !important; /* Vibrant Accent Blue */ 
+    background-color: #1f6feb !important; 
     border-color: #388bfd !important; 
   } 
   div.site-container a:hover { 
@@ -72,26 +67,6 @@
     color: #ffffff !important; 
   } 
 </style> 
-
-<script> 
-  const themeButton = document.getElementById('theme-toggle-btn'); 
-  
-  if (localStorage.getItem('site-theme') === 'dark' || (!localStorage.getItem('site-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) { 
-    document.body.classList.add('dark-mode-active'); 
-    themeButton.textContent = '☀️ Light Mode'; 
-  } 
-
-  themeButton.addEventListener('click', () => { 
-    document.body.classList.toggle('dark-mode-active'); 
-    if (document.body.classList.contains('dark-mode-active')) { 
-      themeButton.textContent = '☀️ Light Mode'; 
-      localStorage.setItem('site-theme', 'dark'); 
-    } else { 
-      themeButton.textContent = '🌙 Dark Mode'; 
-      localStorage.setItem('site-theme', 'light'); 
-    } 
-  }); 
-</script>
 
 # 🚀 PocketSuite Hub
 
