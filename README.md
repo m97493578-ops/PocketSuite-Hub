@@ -67,7 +67,7 @@
   <a href="https://github.com/m97493578-ops/PocketPyCharm" class="btn">🚀 Open PocketPyCharm</a>
 
   <a href="https://github.com/m97493578-ops/PocketPython" class="btn">🚀 Open PocketPython</a>
-<div>
+</div>
 
 **CLICK THE LINKS BELOW FOR THE WEBSITE VERISON**
 <div class="btn-container">
@@ -75,4 +75,4 @@
   <a href="https://m97493578-ops.github.io/PocketPyCharm/" class="btn">🚀 Open PocketPyCharm</a>
 
   <a href="https://m97493578-ops.github.io/PocketPython/" class="btn">🚀 Open PocketPython</a>
-<div>
+</div>
