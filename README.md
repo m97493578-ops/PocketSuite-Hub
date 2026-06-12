@@ -49,6 +49,51 @@ body.dark-mode-active #theme-toggle-btn {
   color: #f0f6fc !important; 
   border-color: #30363d !important; 
 } 
+
+  /* Container layout to stack buttons or space them out nicely */
+.btn-container {
+  margin: 15px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+/* Base style transforming regular links into solid buttons */
+.custom-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #24292e; /* Sleek GitHub gray */
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid #444c56;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Smooth color shifts when hovering or interacting with the button */
+.custom-btn:hover {
+  background-color: #2c3137;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Optional styling variation to make the Live Website links pop differently */
+.site-btn {
+  background-color: #1f6feb; /* Beautiful accent blue */
+  border-color: #388bfd;
+}
+.site-btn:hover {
+  background-color: #388bfd;
+}
+
+/* Ensure buttons stay legible when Dark Mode is turned on */
+body.dark-mode-active .custom-btn {
+  color: #ffffff !important;
+}
+
 </style> 
 
 <script> 
@@ -75,13 +120,17 @@ themeButton.addEventListener('click', () => {
 # 🚀 PocketSuite Hub
 
 **USE THE LINKS BELOW TO SEE THE GITHUB REPOS**
+<div class="btn-container">
+  
+  <a href="https://github.com/m97493578-ops/PocketPyCharm" class="btn">🚀 Open PocketPyCharm</a>
 
-<a href="https://github.com/m97493578-ops/PocketPyCharm" class="btn">🚀 Open PocketPyCharm</a>
-
-<a href="https://github.com/m97493578-ops/PocketPython" class="btn">🚀 Open PocketPython</a>
+  <a href="https://github.com/m97493578-ops/PocketPython" class="btn">🚀 Open PocketPython</a>
+<div>
 
 **CLICK THE LINKS BELOW FOR THE WEBSITE VERISON**
+<div class="btn-container">
 
-<a href="https://m97493578-ops.github.io/PocketPyCharm/" class="btn">🚀 Open PocketPyCharm</a>
+  <a href="https://m97493578-ops.github.io/PocketPyCharm/" class="btn">🚀 Open PocketPyCharm</a>
 
-<a href="https://m97493578-ops.github.io/PocketPython/" class="btn">🚀 Open PocketPython</a>
+  <a href="https://m97493578-ops.github.io/PocketPython/" class="btn">🚀 Open PocketPython</a>
+<div>
