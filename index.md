@@ -1,3 +1,7 @@
+---
+title: PocketSuite Hub
+---
+
 <style> 
   /* 🚫 Force theme engine elements to stay hidden */ 
   header, .site-header, #header, footer, .site-footer, .footer, #footer { display: none !important; } 
