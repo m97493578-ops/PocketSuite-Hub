@@ -19,7 +19,25 @@ title: PocketSuite Hub
 
   /* 💻 Code Block Adjustments */ 
   body.dark-mode-active code { background-color: rgba(110, 118, 129, 0.4) !important; color: #e6edf3 !important; } 
-  body.dark-mode-active #theme-toggle-btn { background: #21262d !important; color: #f0f6fc !important; border-color: #30363d !important; } 
+  
+  /* 🌙 Theme Toggle Button Interface Styles */
+  #theme-toggle-btn { 
+    padding: 10px 16px !important; 
+    background: #21262d !important; 
+    color: #f0f6fc !important; 
+    border: 1px solid #30363d !important; 
+    border-radius: 6px !important; 
+    cursor: pointer !important; 
+    font-weight: 600 !important; 
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+    display: inline-block !important;
+  }
+  body.dark-mode-active #theme-toggle-btn { 
+    background: #ffffff !important; 
+    color: #0d1117 !important; 
+    border-color: #d0d7de !important; 
+  } 
 
   /* ========================================== */ 
   /* 🔥 FORCED AGGRESSIVE BUTTON OVERRIDES      */ 
@@ -71,6 +89,26 @@ title: PocketSuite Hub
     color: #ffffff !important; 
   } 
 </style> 
+
+<!-- 🌓 Interactive Theme Selector Elements -->
+<button id="theme-toggle-btn" onclick="toggleDarkMode()">🌙 Switch Theme</button>
+
+<script>
+  function toggleDarkMode() {
+    const bodyElement = document.body;
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    
+    // Toggle class name matches your custom dark mode CSS rule targets
+    bodyElement.classList.toggle('dark-mode-active');
+    
+    // Dynamically shift visual label text based on active states
+    if (bodyElement.classList.contains('dark-mode-active')) {
+      themeBtn.innerHTML = '☀️ Light Mode';
+    } else {
+      themeBtn.innerHTML = '🌙 Dark Mode';
+    }
+  }
+</script>
 
 # 🚀 PocketSuite Hub
 
